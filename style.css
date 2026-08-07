@@ -336,3 +336,123 @@ body{
     content:"🎲";
 
 }
+
+/* ==========================================================
+   BLOQUE 5
+   Carta de juego
+========================================================== */
+
+#gameScreen{
+
+    justify-content:center;
+    align-items:center;
+    gap:40px;
+
+}
+
+#card{
+
+    width:min(90vw,360px);
+    aspect-ratio:2/3;
+
+    position:relative;
+
+    border-radius:24px;
+
+    overflow:hidden;
+
+    background:
+        linear-gradient(160deg,#191919,#090909);
+
+    border:2px solid rgba(212,175,55,.35);
+
+    box-shadow:
+        0 0 35px rgba(212,175,55,.15),
+        0 15px 40px rgba(0,0,0,.45);
+
+}
+
+.cardFace{
+
+    position:absolute;
+
+    inset:0;
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:center;
+    align-items:center;
+
+    padding:30px;
+
+}
+
+.cardFront{
+
+    background:
+    linear-gradient(
+        160deg,
+        #171717,
+        #080808);
+
+}
+
+.cardTitle{
+
+    font-family:"Cinzel",serif;
+
+    font-size:2rem;
+
+    color:var(--gold);
+
+    letter-spacing:3px;
+
+}
+
+.cardBack{
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:center;
+
+    text-align:center;
+
+}
+
+#cardCategory{
+
+    font-family:"Cinzel",serif;
+
+    color:var(--gold);
+
+    font-size:1.4rem;
+
+    margin-bottom:30px;
+
+    letter-spacing:3px;
+
+}
+
+#cardText{
+
+    color:var(--text);
+
+    font-size:1.2rem;
+
+    line-height:1.8;
+
+}
+
+.gameButtons{
+
+    display:flex;
+
+    flex-direction:column;
+
+    align-items:center;
+
+}
