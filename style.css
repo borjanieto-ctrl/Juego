@@ -456,3 +456,15 @@ body{
     align-items:center;
 
 }
+
+.cardSubtitle{
+
+    margin-top:25px;
+
+    color:#9d9d9d;
+
+    letter-spacing:2px;
+
+    font-size:.95rem;
+
+}
