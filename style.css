@@ -210,3 +210,129 @@ body{
     color:var(--gold);
 
 }
+
+/* ==========================================================
+   BLOQUE 3
+   Pantalla selección de mazos
+==========================================================*/
+
+#deckScreen{
+
+    gap:40px;
+
+}
+
+#deckScreen h2{
+
+    font-family:"Cinzel",serif;
+
+    color:var(--gold);
+
+    font-size:2rem;
+
+    text-align:center;
+
+    letter-spacing:2px;
+
+}
+
+.deckGrid{
+
+    width:100%;
+    max-width:420px;
+
+    display:grid;
+
+    grid-template-columns:repeat(2,1fr);
+
+    gap:20px;
+
+}
+
+.deck{
+
+    aspect-ratio:0.72;
+
+    border:none;
+
+    cursor:pointer;
+
+    border-radius:24px;
+
+    background:linear-gradient(
+        180deg,
+        #171717,
+        #0d0d0d);
+
+    border:1px solid rgba(212,175,55,.20);
+
+    color:white;
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:center;
+
+    align-items:center;
+
+    transition:.30s;
+
+    box-shadow:
+        0 10px 25px rgba(0,0,0,.35);
+
+}
+
+.deck:hover{
+
+    transform:
+        translateY(-6px);
+
+    border-color:var(--gold);
+
+    box-shadow:
+        0 0 25px rgba(212,175,55,.25);
+
+}
+
+.deck span{
+
+    margin-top:18px;
+
+    font-family:"Cinzel",serif;
+
+    font-size:1rem;
+
+    letter-spacing:2px;
+
+}
+
+.deck::before{
+
+    font-size:48px;
+
+}
+
+.previa::before{
+
+    content:"👁";
+
+}
+
+.accion::before{
+
+    content:"🔥";
+
+}
+
+.poses::before{
+
+    content:"❤";
+
+}
+
+.random::before{
+
+    content:"🎲";
+
+}
