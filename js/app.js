@@ -27,13 +27,19 @@ card.addEventListener("click", () => {
 
     decks.forEach(deck => {
 
-        deck.addEventListener("click", () => {
+    deck.addEventListener("click", () => {
 
-            showScreen("game");
+        setDeck(
 
-        });
+            deck.classList[1]
+
+        );
+
+        showScreen("game");
 
     });
+
+});
 
     backButton.addEventListener("click", () => {
 
