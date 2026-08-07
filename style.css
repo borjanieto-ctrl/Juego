@@ -1,0 +1,212 @@
+/* ==========================================================
+   NOX
+   style.css
+   Base global
+========================================================== */
+
+/* ---------- Variables ---------- */
+
+:root{
+
+    --bg:#090909;
+    --bg-secondary:#111111;
+
+    --gold:#D4AF37;
+    --gold-light:#F2D675;
+
+    --text:#F5F5F5;
+    --text-soft:#BDBDBD;
+
+    --radius:18px;
+
+    --transition:0.35s ease;
+
+    --shadow:
+        0 0 20px rgba(212,175,55,.15);
+
+}
+
+/* ---------- Reset ---------- */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+
+    scroll-behavior:smooth;
+
+}
+
+body{
+
+    background:var(--bg);
+
+    color:var(--text);
+
+    font-family:"Inter",sans-serif;
+
+    min-height:100vh;
+
+    overflow:hidden;
+
+}
+
+/* ---------- App ---------- */
+
+#app{
+
+    width:100%;
+    height:100vh;
+
+    position:relative;
+
+}
+
+/* ---------- Fondo ---------- */
+
+#background{
+
+    position:fixed;
+
+    inset:0;
+
+    background:
+        radial-gradient(circle at top,
+        rgba(212,175,55,.08),
+        transparent 45%),
+
+        linear-gradient(
+        180deg,
+        #0b0b0b,
+        #050505);
+
+    z-index:-1;
+
+}
+
+/* ---------- Pantallas ---------- */
+
+.screen{
+
+    width:100%;
+    height:100vh;
+
+    display:none;
+
+    padding:30px;
+
+}
+
+.screen.active{
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:center;
+
+    align-items:center;
+
+}
+
+/* ---------- Logo ---------- */
+
+.logo{
+
+    font-family:"Cinzel",serif;
+
+    font-size:72px;
+
+    color:var(--gold);
+
+    letter-spacing:10px;
+
+}
+
+.subtitle{
+
+    margin-top:18px;
+
+    color:var(--text-soft);
+
+    font-size:18px;
+
+    line-height:1.6;
+
+    text-align:center;
+
+}
+
+/* ---------- Botón principal ---------- */
+
+.goldButton{
+
+    margin-top:60px;
+
+    width:250px;
+
+    height:60px;
+
+    border:none;
+
+    border-radius:999px;
+
+    cursor:pointer;
+
+    background:linear-gradient(
+        135deg,
+        #b88a18,
+        #f3d06c);
+
+    color:#111;
+
+    font-weight:700;
+
+    font-size:16px;
+
+    transition:var(--transition);
+
+    box-shadow:var(--shadow);
+
+}
+
+.goldButton:hover{
+
+    transform:translateY(-3px);
+
+}
+
+/* ---------- Botón secundario ---------- */
+
+.secondaryButton{
+
+    margin-top:15px;
+
+    width:250px;
+
+    height:55px;
+
+    border-radius:999px;
+
+    border:1px solid rgba(255,255,255,.2);
+
+    background:transparent;
+
+    color:white;
+
+    cursor:pointer;
+
+    transition:var(--transition);
+
+}
+
+.secondaryButton:hover{
+
+    border-color:var(--gold);
+
+    color:var(--gold);
+
+}
