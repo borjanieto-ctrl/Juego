@@ -11,6 +11,14 @@ document.addEventListener("DOMContentLoaded", () => {
 
     const decks = document.querySelectorAll(".deck");
 
+    const card = document.getElementById("card");
+
+card.addEventListener("click", () => {
+
+    card.classList.toggle("flipped");
+
+});
+
     playButton.addEventListener("click", () => {
 
         showScreen("deck");
