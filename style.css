@@ -468,3 +468,33 @@ body{
     font-size:.95rem;
 
 }
+
+/* =====================================
+   Preparación para el giro de la carta
+===================================== */
+
+#card{
+
+    perspective:1200px;
+
+}
+
+.cardFace{
+
+    backface-visibility:hidden;
+
+    -webkit-backface-visibility:hidden;
+
+}
+
+.cardFront{
+
+    z-index:2;
+
+}
+
+.cardBack{
+
+    transform:rotateY(180deg);
+
+}
