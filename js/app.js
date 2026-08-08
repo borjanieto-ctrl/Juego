@@ -35,6 +35,8 @@ card.addEventListener("click", () => {
 
         );
 
+        console.log(Game.deck);
+
         showScreen("game");
 
     });
