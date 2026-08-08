@@ -350,10 +350,17 @@ body{
 
 }
 
+/* =====================================
+   Tamaño de la carta
+===================================== */
+
 #card{
 
-    width:min(90vw,360px);
-    aspect-ratio:2/3;
+    width:min(82vw,360px);
+
+    height:min(62vh,540px);
+
+    aspect-ratio:auto;
 
     position:relative;
 
@@ -362,13 +369,21 @@ body{
     overflow:hidden;
 
     background:
-        linear-gradient(160deg,#191919,#090909);
+        linear-gradient(
+            160deg,
+            #191919,
+            #090909
+        );
 
     border:2px solid rgba(212,175,55,.35);
 
     box-shadow:
         0 0 35px rgba(212,175,55,.15),
         0 15px 40px rgba(0,0,0,.45);
+
+    perspective:1200px;
+
+    flex-shrink:0;
 
 }
 
