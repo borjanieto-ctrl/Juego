@@ -348,15 +348,18 @@ body{
 
 #gameScreen{
 
-    justify-content:space-evenly;
+    justify-content:flex-start;
 
     align-items:center;
 
-    gap:15px;
+    gap:30px;
 
-    padding-top:20px;
+    padding-top:30px;
+    padding-bottom:40px;
 
-    padding-bottom:20px;
+    overflow-y:auto;
+
+    overflow-x:hidden;
 
 }
 
@@ -566,5 +569,25 @@ body{
 .cardBack{
 
     transform:rotateY(180deg);
+
+}
+
+/* =====================================
+   Scroll de la pantalla de juego
+===================================== */
+
+#gameScreen{
+
+    min-height:100vh;
+
+    height:100vh;
+
+    -webkit-overflow-scrolling:touch;
+
+}
+
+#gameScreen .gameButtons{
+
+    padding-bottom:20px;
 
 }
